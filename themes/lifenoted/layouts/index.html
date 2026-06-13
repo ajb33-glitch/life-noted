@@ -1,10 +1,17 @@
 {{ define "main" }}
 
-  {{/* ── Hero ── */}}
+  {{/* ── Homepage: hide sticky nav, hero goes full-bleed to top ── */}}
+  <style>
+    .nav { display: none !important; }
+    body { padding-top: 0 !important; }
+  </style>
+
+  {{/* ── Hero (full bleed) ── */}}
   <div class="hero">
     <img class="hero-img" src="/images/hero.jpg" alt="{{ .Site.Title }}"
          onerror="this.style.display='none'">
     <div class="hero-overlay"></div>
+
     <div class="hero-text">
       <div class="cards-container">
         <h1 class="hero-title">{{ .Site.Title }}</h1>
