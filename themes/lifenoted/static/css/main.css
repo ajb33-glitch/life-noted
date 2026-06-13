@@ -4,21 +4,21 @@
 
 @font-face {
   font-family: 'Lora';
-  src: url('/fonts/lora.woff2') format('woff2');
+  src: url('../fonts/lora.woff2') format('woff2');
   font-weight: 400 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Outfit';
-  src: url('/fonts/outfit.woff2') format('woff2');
+  src: url('../fonts/outfit.woff2') format('woff2');
   font-weight: 400 500 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Meera';
-  src: url('/fonts/Meera.ttf') format('truetype');
+  src: url('../fonts/Meera.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

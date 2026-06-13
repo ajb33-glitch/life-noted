@@ -1,7 +1,7 @@
 <nav class="nav">
   <div class="nav-inner">
     {{ if not .IsHome }}
-    <a class="nav-brand" href="/">{{ .Site.Title }}</a>
+    <a class="nav-brand" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
     {{ else }}
     <span class="nav-brand-placeholder"></span>
     {{ end }}

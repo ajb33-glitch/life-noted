@@ -8,7 +8,7 @@
 
   {{/* ── Hero (full bleed) ── */}}
   <div class="hero">
-    <img class="hero-img" src="/images/hero.jpg" alt="{{ .Site.Title }}"
+    <img class="hero-img" src="{{ "images/hero.jpg" | relURL }}" alt="{{ .Site.Title }}"
          onerror="this.style.display='none'">
     <div class="hero-overlay"></div>
 

@@ -7,7 +7,7 @@
   <div class="post-cover-wrap">
     {{ with .Params.cover }}
       {{ $pos := $.Params.coverPosition | default "center center" }}
-      <img class="post-cover-img" src="{{ . }}" alt="{{ $.Title }}"
+      <img class="post-cover-img" src="{{ . | strings.TrimPrefix "/" | relURL }}" alt="{{ $.Title }}"
            style="object-position: {{ $pos }};">
     {{ else }}
       <div class="post-cover-placeholder"></div>
@@ -15,7 +15,7 @@
 
     <div class="post-author-badge">
       <img class="post-author-img"
-           src="/images/author.jpg"
+           src="{{ "images/author.jpg" | relURL }}"
            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
            alt="AJ">
       <div class="post-author-initials">AJ</div>

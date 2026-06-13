@@ -1,0 +1,8 @@
+{{- /* Rewrites markdown image URLs so absolute /paths respect the site's baseURL subpath */ -}}
+{{- $src := .Destination -}}
+{{- if strings.HasPrefix $src "/" -}}
+  {{- $src = $src | strings.TrimPrefix "/" | relURL -}}
+{{- else if not (urls.Parse $src).IsAbs -}}
+  {{- $src = $src | relURL -}}
+{{- end -}}
+<img src="{{ $src }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy">
