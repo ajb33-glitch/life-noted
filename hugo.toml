@@ -1,0 +1,12 @@
+baseURL = "http://127.0.0.1:1313/"
+title = "Life, Noted."
+theme = "lifenoted"
+locale = "ml-IN"
+defaultContentLanguage = "ml"
+
+[params]
+  tagline = "A loose-leaf journal..."
+  description = "A loose-leaf journal in Malayalam"
+
+[pagination]
+  pagerSize = 5

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ml" data-theme="light">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Categories | Life, Noted.</title>
+<meta name="description" content="A loose-leaf journal in Malayalam">
+<script>
+  (function(){
+    var t = localStorage.getItem('ln-theme');
+    if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+  })();
+</script>
+
+<link rel="stylesheet" href="/css/main.css?v=22">
+
+<link rel="alternate" type="application/rss&#43;xml" href="http://127.0.0.1:1313/categories/index.xml" title="rss">
+
+
+</head>
+<body>
+  <nav class="nav">
+  
+  <a class="nav-brand" href="/">Life, Noted.</a>
+  
+  <div class="nav-right">
+    <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode"
+      style="background:none;border:none;cursor:pointer;font-size:22px;padding:8px;line-height:1;color:inherit;">
+      <span id="theme-icon">☾</span>
+    </button>
+  </div>
+</nav>
+
+  <main>
+    
+<div class="list-wrap">
+  <h1 class="list-heading">Categories</h1>
+  <p class="list-sub">0 posts</p>
+  <div class="posts-grid">
+    
+  </div>
+</div>
+
+  </main>
+  <footer class="footer">
+  <p>© 2026 Life, Noted.</p>
+</footer>
+
+  <script>
+    function toggleTheme() {
+      var html = document.documentElement;
+      var isDark = html.getAttribute('data-theme') !== 'dark';
+      html.setAttribute('data-theme', isDark ? 'dark' : 'light');
+      localStorage.setItem('ln-theme', isDark ? 'dark' : 'light');
+      document.getElementById('theme-icon').textContent = isDark ? '☀' : '☾';
+    }
+    
+    (function() {
+      var t = localStorage.getItem('ln-theme');
+      if (t === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        var icon = document.getElementById('theme-icon');
+        if (icon) icon.textContent = '☀';
+      }
+    })();
+  </script>
+</body>
+</html>

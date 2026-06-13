@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="list-wrap">
+  <h1 class="list-heading">{{ .Title }}</h1>
+  <p class="list-sub">{{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }}</p>
+  <div class="posts-grid">
+    {{ range .Pages }}
+      {{ partial "post-card.html" . }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}

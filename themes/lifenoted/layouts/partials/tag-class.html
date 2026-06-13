@@ -1,0 +1,8 @@
+{{/* Returns a CSS class name based on the tag slug.
+     Usage: {{ partial "tag-class.html" "Japan Diary" }} → "cat-japan" */}}
+{{- $map := dict
+    "japan-diary"  "cat-japan"
+    "travelogues"  "cat-travel"
+    "wanderings"   "cat-wander"
+-}}
+{{- index $map (. | urlize) | default "cat-other" -}}

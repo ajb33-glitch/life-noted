@@ -1,0 +1,22 @@
+{{/* Determine tag + color class */}}
+{{ $firstTag := index .Params.tags 0 | default "" }}
+{{ $catClass := partial "tag-class.html" $firstTag }}
+
+<article class="post-card">
+  <a class="card-img-link" href="{{ .Permalink }}">
+    {{ with .Params.cover }}
+      <img class="card-img" src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+    {{ else }}
+      <div class="card-img-placeholder {{ $catClass }}"></div>
+    {{ end }}
+  </a>
+  <div class="card-body">
+    <a class="card-title" href="{{ .Permalink }}">{{ .Title }}</a>
+    <div class="card-meta">
+      {{ with $firstTag }}
+        <span class="tag {{ $catClass }}">{{ . }}</span>
+      {{ end }}
+      <span class="card-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+    </div>
+  </div>
+</article>

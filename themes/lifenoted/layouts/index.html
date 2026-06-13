@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+  {{/* ── Hero ── */}}
+  <div class="hero">
+    <img class="hero-img" src="/images/hero.jpg" alt="{{ .Site.Title }}"
+         onerror="this.style.display='none'">
+    <div class="hero-overlay"></div>
+    {{/* hero-text wraps in cards-container so left edge aligns with card grid */}}
+    <div class="hero-text">
+      <div class="cards-container">
+        <h1 class="hero-title">{{ .Site.Title }}</h1>
+        <p class="hero-tagline">{{ site.Params.tagline | default "A loose-leaf journal..." }}</p>
+      </div>
+    </div>
+  </div>
+
+  {{/* ── Posts grouped by category ── */}}
+  <div class="posts-section">
+
+    {{ $allTags := slice }}
+    {{ range $term, $pages := site.Taxonomies.tags }}
+      {{ $allTags = $allTags | append (dict "term" $term "pages" $pages) }}
+    {{ end }}
+
+    {{ range sort $allTags "term" }}
+      {{ $term      := .term }}
+      {{ $pages     := .pages.Pages.ByDate.Reverse }}
+      {{ $catClass  := partial "tag-class.html" $term }}
+
+      {{ if gt (len $pages) 0 }}
+      <section class="category-group">
+        <h2 class="category-heading {{ $catClass }}">
+          <span class="cat-label">{{ $term | humanize | title }}</span>
+          <span class="cat-line"></span>
+        </h2>
+        <div class="cards-grid">
+          {{ range $pages }}
+            {{ partial "post-card.html" . }}
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+    {{ end }}
+
+  </div>
+
+{{ end }}
