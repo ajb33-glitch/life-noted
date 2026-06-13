@@ -13,7 +13,7 @@ cover: "/images/japan-diary-part-1/JD_P1-1.jpeg"
 ഇപ്പോൾ ഇതാ അങ്ങോട്ട് പോവാൻ ഉള്ള ഒരു അവസരവും.  
 സ്വപ്നങ്ങളല്ലാ യാഥാര്‍ത്ഥ്യമെന്ന് ഒരിക്കൽ കൂടി തിരിച്ചറിഞ്ഞിരിക്കുന്നു.
 
-![Gemini_Generated_Image_vveqi5vveqi5vveq.jpeg](/images/japan-diary-part-1/Gemini_Generated_Image_vveqi5vveqi5vveq.jpeg)
+![JD_P1-1.jpeg](/images/japan-diary-part-1/JD_P1-1.jpeg)
 
 ഞാനും ആർക്കിമെഡീസും തമ്മിൽ എന്തോ ഒരു ജന്മാന്തര ബന്ധമുള്ളത് പോലെ തോന്നിയിട്ടുണ്ട് പലപ്പോഴും.  
 പുനർജന്മ തിയറിസ് വച്ച് നോക്കിയാല്‍, ഞാൻ ആണോ ഇനി ആർക്കിമെഡീസിന്റെ പുനർജനം എന്ന് എനിക്ക്  തന്നെ സംശയം തോന്നാറുണ്ട്.   
