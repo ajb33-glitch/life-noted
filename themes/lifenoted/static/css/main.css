@@ -565,12 +565,6 @@ h2.category-heading.cat-other::after  { background: #5A6A7A !important; }
 }
 
 /* Comments */
-.comments-section {
-  border-top: 1px solid var(--border);
-  margin-top: 2.5rem; padding-top: 1.5rem;
-  text-align: center;
-  font-size: 0.875rem; color: var(--text-muted);
-}
 
 /* ══════════════════════════════════════
    LIST PAGES (tag archives)
