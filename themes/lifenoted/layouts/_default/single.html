@@ -52,17 +52,15 @@
     <nav class="post-nav">
       <div class="post-nav-prev">
         {{ with .NextInSection }}
-        <a href="{{ .Permalink }}">
-          <span class="pn-label">← Older post</span>
-          <span class="pn-title">{{ .Title }}</span>
+        <a class="pn-link" href="{{ .Permalink }}">
+          <span class="pn-arrow">←</span>{{ .Title }}
         </a>
         {{ end }}
       </div>
       <div class="post-nav-next">
         {{ with .PrevInSection }}
-        <a href="{{ .Permalink }}">
-          <span class="pn-label">Newer post →</span>
-          <span class="pn-title">{{ .Title }}</span>
+        <a class="pn-link" href="{{ .Permalink }}">
+          {{ .Title }}<span class="pn-arrow">→</span>
         </a>
         {{ end }}
       </div>

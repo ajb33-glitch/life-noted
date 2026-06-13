@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{ $pages := .Pages.ByDate.Reverse }}
+
+<div class="tax-page">
+
+  <header class="tax-header">
+    <h1 class="tax-title">{{ .Title | upper }}</h1>
+    <p class="tax-count">{{ len $pages }} {{ if eq (len $pages) 1 }}post{{ else }}posts{{ end }}</p>
+  </header>
+
+  <div class="cards-grid">
+    {{ range $pages }}
+      {{ partial "post-card.html" . }}
+    {{ end }}
+  </div>
+
+</div>
+{{ end }}

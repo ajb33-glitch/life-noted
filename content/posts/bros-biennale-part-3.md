@@ -260,7 +260,7 @@ According to Murphy’s Law “Anything that can go wrong will go wrong.”
 
 അവസാനിച്ചു.
 
-**അടികുറിപ്പ്**
+## അടികുറിപ്പ്
 
 “ഉള്‍കാഴ്ചകള്‍ ഉരുവാകുന്നിടം”
 കൊച്ചി മുസിരിസ് ബിനാലെയുടെ ടാഗ് ലൈന്‍.

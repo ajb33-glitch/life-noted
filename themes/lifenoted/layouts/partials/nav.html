@@ -1,13 +1,15 @@
 <nav class="nav">
-  {{ if not .IsHome }}
-  <a class="nav-brand" href="/">{{ .Site.Title }}</a>
-  {{ else }}
-  <span class="nav-brand-placeholder"></span>
-  {{ end }}
-  <div class="nav-right">
-    <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode"
-      style="background:none;border:none;cursor:pointer;font-size:22px;padding:8px;line-height:1;color:inherit;">
-      <span id="theme-icon">☾</span>
-    </button>
+  <div class="nav-inner">
+    {{ if not .IsHome }}
+    <a class="nav-brand" href="/">{{ .Site.Title }}</a>
+    {{ else }}
+    <span class="nav-brand-placeholder"></span>
+    {{ end }}
+    <div class="nav-right">
+      <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode"
+        style="background:none;border:none;cursor:pointer;font-size:22px;padding:8px;line-height:1;color:inherit;">
+        <span id="theme-icon">☾</span>
+      </button>
+    </div>
   </div>
 </nav>

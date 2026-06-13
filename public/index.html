@@ -13,7 +13,7 @@
   })();
 </script>
 
-<link rel="stylesheet" href="/css/main.css?v=22">
+<link rel="stylesheet" href="/css/main.css?v=43">
 
 <link rel="alternate" type="application/rss&#43;xml" href="http://127.0.0.1:1313/index.xml" title="rss">
 
@@ -21,14 +21,16 @@
 </head>
 <body>
   <nav class="nav">
-  
-  <span class="nav-brand-placeholder"></span>
-  
-  <div class="nav-right">
-    <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode"
-      style="background:none;border:none;cursor:pointer;font-size:22px;padding:8px;line-height:1;color:inherit;">
-      <span id="theme-icon">☾</span>
-    </button>
+  <div class="nav-inner">
+    
+    <span class="nav-brand-placeholder"></span>
+    
+    <div class="nav-right">
+      <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode"
+        style="background:none;border:none;cursor:pointer;font-size:22px;padding:8px;line-height:1;color:inherit;">
+        <span id="theme-icon">☾</span>
+      </button>
+    </div>
   </div>
 </nav>
 
@@ -40,7 +42,6 @@
     <img class="hero-img" src="/images/hero.jpg" alt="Life, Noted."
          onerror="this.style.display='none'">
     <div class="hero-overlay"></div>
-    
     <div class="hero-text">
       <div class="cards-container">
         <h1 class="hero-title">Life, Noted.</h1>
@@ -51,6 +52,16 @@
 
   
   <div class="posts-section">
+
+    
+    <div class="loose-leaves-header">
+      <span class="ll-text">LOOSE LEAVES...</span>
+      <div class="ll-ornament">
+        <span class="ll-dash"></span>
+        <span class="ll-dot"></span>
+        <span class="ll-dash"></span>
+      </div>
+    </div>
 
     
     
@@ -68,11 +79,11 @@
 
       
       <section class="category-group">
-        <h2 class="category-heading cat-japan">
+        <h2 class="category-heading cat-japan" data-accordion>
           <span class="cat-label">Japan Diary</span>
-          <span class="cat-line"></span>
+          <span class="cat-chevron" aria-hidden="true">▼</span>
         </h2>
-        <div class="cards-grid">
+        <div class="cards-grid accordion-body">
           
             
 
@@ -304,11 +315,11 @@
 
       
       <section class="category-group">
-        <h2 class="category-heading cat-travel">
+        <h2 class="category-heading cat-travel" data-accordion>
           <span class="cat-label">Travelogues</span>
-          <span class="cat-line"></span>
+          <span class="cat-chevron" aria-hidden="true">▼</span>
         </h2>
-        <div class="cards-grid">
+        <div class="cards-grid accordion-body">
           
             
 
@@ -430,11 +441,11 @@
 
       
       <section class="category-group">
-        <h2 class="category-heading cat-wander">
+        <h2 class="category-heading cat-wander" data-accordion>
           <span class="cat-label">Wanderings</span>
-          <span class="cat-line"></span>
+          <span class="cat-chevron" aria-hidden="true">▼</span>
         </h2>
-        <div class="cards-grid">
+        <div class="cards-grid accordion-body">
           
             
 
@@ -508,6 +519,25 @@
     
 
   </div>
+
+  <script>
+    document.querySelectorAll('[data-accordion]').forEach(function(heading) {
+      var body    = heading.closest('.category-group').querySelector('.accordion-body');
+      var chevron = heading.querySelector('.cat-chevron');
+
+       
+      body.classList.remove('accordion-collapsed');
+      chevron.style.transform = 'rotate(0deg)';
+      heading.setAttribute('aria-expanded', 'true');
+      heading.style.cursor = 'pointer';
+
+      heading.addEventListener('click', function() {
+        var isCollapsed = body.classList.toggle('accordion-collapsed');
+        chevron.style.transform = isCollapsed ? 'rotate(-90deg)' : 'rotate(0deg)';
+        heading.setAttribute('aria-expanded', String(!isCollapsed));
+      });
+    });
+  </script>
 
 
   </main>
