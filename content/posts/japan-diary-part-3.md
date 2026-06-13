@@ -132,7 +132,7 @@ cover: "/images/japan-diary-part-3/JD_P3-1.jpeg"
 
 Here I go...  
 
-![JD P2-1.jpeg](/images/japan-diary-part-3/JD_P2-1.jpeg)  
+![JD P2-1.jpeg](/images/japan-diary-part-3/JD_P3-1.jpeg)  
 
 Bangalore Airport  
 
@@ -163,7 +163,7 @@ Cathay Pacific - Dragon Air (Bengaluru to Hong Kong)
 ഹോംഗ് കോങ്ങ് വിമാനത്താവളം ശെരിക്കും കറങ്ങി നടന്നു.  
 വിമാനങ്ങൾ...വിമാനങ്ങൾ...വിമാനങ്ങൾ...  
 
-![JD P3.jpeg](/images/japan-diary-part-3/JD_P3.jpeg)  
+![JD P3.jpeg](/images/japan-diary-part-3/JD_P3-2.jpeg)  
 
 Air Bus A380, Boeing 777, Air Bus A320, Boeing 747...അങ്ങിനെ അങ്ങിനെ...  
 പലതരത്തിൽ, പല വലുപ്പത്തിൽ, പല രാജ്യങ്ങളുടെ വിമാനങ്ങൾ.  

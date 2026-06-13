@@ -36,7 +36,7 @@
     <div class="post-tags-row">
       {{ range . }}
         {{ $cls := partial "tag-class.html" . }}
-        <a class="tag {{ $cls }}" href="{{ "/tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a>
+        <a class="tag {{ $cls }}" href="{{ (printf "tags/%s/" (. | urlize)) | relURL }}">{{ . }}</a>
       {{ end }}
     </div>
     {{ end }}

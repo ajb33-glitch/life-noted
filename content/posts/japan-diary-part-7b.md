@@ -140,7 +140,7 @@ cover: "/images/japan-diary-part-7b/JD_7B-1.jpeg"
 ഇല്ലാ, അലറാൻ സമയം കിട്ടില്ലാ…പടചോനേ, നിങ്ങളു കാത്തോളീ…
 ആപത്തു വരുമ്പോ അങ്ങിനെ ദൈവങ്ങളിൽ മതം നോക്കാറില്ല‌, അങ്ങ്ടു വിളിയ്ക്കനേ…
 
-![Gemini_Generated_Image_8wsqdk8wsqdk8wsq.jpeg](/images/japan-diary-part-7b/Gemini_Generated_Image_8wsqdk8wsqdk8wsq.jpeg)
+![Gemini_Generated_Image_8wsqdk8wsqdk8wsq.jpeg](/images/japan-diary-part-7b/JD_7B-1.jpeg)
 
 പെട്ടന്നു തലയുടെ പിന്നിൽ ആരോ അമർത്തുന്ന പോലെ…നല്ല ശക്തിയിൽ തന്നെ !!
 തല തിരിചു നോക്കാൻ പറ്റാത്തതു കൊണ്ടു നേരെയുള്ള കണ്ണാടിയിലേക്കൊന്നു നോക്കി.
