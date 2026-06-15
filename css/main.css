@@ -690,6 +690,16 @@ a.site-name {
   .post-author-initials { width: 72px !important; height: 72px !important; font-size: 18px !important; }
   .post-header-wrap { margin-top: 50px !important; padding: 0 20px !important; }
   .post-wrap { padding: 1.5rem 20px 3rem !important; }
+  /* Text elements: drop the 48px inset on mobile — .post-wrap's 20px is enough */
+  .post-content p,
+  .post-content h2,
+  .post-content h3,
+  .post-content blockquote,
+  .post-content ul,
+  .post-content ol {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
   .post-title { font-size: 22px; }
   .post-nav { grid-template-columns: 1fr; gap: 1rem; }
   .post-nav-next { text-align: left; }
