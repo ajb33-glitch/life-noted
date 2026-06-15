@@ -685,7 +685,7 @@ a.site-name {
   .posts-section, .list-wrap { padding: 1.25rem 12px 2.5rem; }
   .cards-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .post-cover-img, .post-cover-placeholder { height: 240px !important; }
-  .post-author-badge { bottom: -36px !important; left: 20px !important; }
+  .post-author-badge { bottom: -36px !important; left: 20px !important; width: 72px !important; height: 72px !important; }
   .post-author-img { width: 72px !important; height: 72px !important; }
   .post-author-initials { width: 72px !important; height: 72px !important; font-size: 18px !important; }
   .post-header-wrap { margin-top: 50px !important; padding: 0 20px !important; }
