@@ -7,3 +7,8 @@ public/
 
 # Hugo lock file
 .hugo_build.lock
+
+# Cowork working files — never commit
+docs/
+reference/
+outputs/
