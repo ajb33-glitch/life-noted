@@ -12,3 +12,13 @@ public/
 docs/
 reference/
 outputs/
+
+# added by setup cleanup
+.env
+.env.*
+!.env.example
+node_modules/
+.venv/
+__pycache__/
+.next/
+.claude/settings.local.json
